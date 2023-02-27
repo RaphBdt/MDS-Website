@@ -3,6 +3,7 @@ import Nav from './components/Nav.vue'
 import MainTitle from './components/MainTitle.vue'
 import Button from './components/Button.vue'
 import StudentImages from './components/StudentImages.vue'
+import OtherTitles from './components/OtherTitles.vue'
 </script>
 
 <template>
@@ -11,7 +12,8 @@ import StudentImages from './components/StudentImages.vue'
   <div class="flex justify-center">
     <Button class="mx-auto mt-8" text="Appelez-nous" />
   </div>
-  <StudentImages class="mx-auto mt-36" />
+  <StudentImages class="mx-auto my-36" />
+  <OtherTitles type="h3" msg="Des campus partout en France" />
 </template>
 
 <style scoped>
