@@ -1,3 +1,6 @@
+<script setup lang="ts">
+import Button from './Button.vue'
+</script>
 <script lang="ts">
 export default {
     setup() {
@@ -18,7 +21,7 @@ export default {
                     <a class="text-[#A5A5A5] font-bold mx-3">Les programmes</a>
                     <a class="text-[#A5A5A5] font-bold mx-3">Notre blog</a>
                 </div>
-                <a class="bg-[#29B7C5] px-5 py-3 text-white rounded-full" href="">M'inscrire</a>
+                <Button text="M'inscrire" />
             </div>
         </div>
     </nav>
