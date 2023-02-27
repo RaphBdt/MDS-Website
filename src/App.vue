@@ -1,20 +1,25 @@
-<script setup lang="ts">
+<script lang="ts">
+import { defineComponent } from 'vue'
+
 import Nav from './components/Nav.vue'
 import MainTitle from './components/MainTitle.vue'
 import Button from './components/Button.vue'
 import StudentImages from './components/StudentImages.vue'
 import OtherTitles from './components/OtherTitles.vue'
 import City from './components/City.vue'
-</script>
-<script lang="ts">
-export default {
-  setup() {
-    
-  },
-  mounted() {
-    document.body.classList.add('bg-[#F9FBFC]');
-  }
-}
+
+export default defineComponent({
+  components: { Nav, MainTitle, Button, StudentImages, OtherTitles, City },
+    props: {
+        message: String
+    },
+    setup(props) {
+        
+    },
+    mounted() {
+      document.body.classList.add('bg-[#F9FBFC]');
+    }
+})
 </script>
 
 
