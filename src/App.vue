@@ -7,11 +7,11 @@ import StudentImages from './components/StudentImages.vue'
 
 <template>
   <Nav class="my-14" />
-  <MainTitle class="w-[600px] mx-auto mt-20" msg="La meilleure école des métiers du digital" />
+  <MainTitle class="w-[600px] mx-auto mt-30" msg="La meilleure école des métiers du digital" />
   <div class="flex justify-center">
     <Button class="mx-auto mt-8" text="Appelez-nous" />
   </div>
-  <StudentImages class="mx-auto mt-32" />
+  <StudentImages class="mx-auto mt-36" />
 </template>
 
 <style scoped>
