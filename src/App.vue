@@ -5,6 +5,17 @@ import Button from './components/Button.vue'
 import StudentImages from './components/StudentImages.vue'
 import OtherTitles from './components/OtherTitles.vue'
 </script>
+<script lang="ts">
+export default {
+  setup() {
+    
+  },
+  mounted() {
+    document.body.classList.add('bg-[#F9FBFC]');
+  }
+}
+</script>
+
 
 <template>
   <Nav class="my-14" />
