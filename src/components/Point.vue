@@ -1,15 +1,15 @@
-<script setup lang="ts">
-defineProps<{
-  color?: string,
-  size?: string
-}>()
-</script>
 <script lang="ts">
-export default {
-    setup() {
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+    props: {
+        color: String,
+        size: String,
+    },
+    setup(props) {
         
-    }
-}
+    },
+})
 </script>
 
 <template>

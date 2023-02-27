@@ -1,14 +1,14 @@
-<script setup lang="ts">
-defineProps<{
-  text?: string
-}>()
-</script>
 <script lang="ts">
-export default {
-    setup() {
+import { defineComponent } from 'vue'
 
-    }
-}
+export default defineComponent({
+    props: {
+        text: String
+    },
+    setup(props) {
+
+    },
+})
 </script>
 
 <template>

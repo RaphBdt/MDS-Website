@@ -4,6 +4,7 @@ import MainTitle from './components/MainTitle.vue'
 import Button from './components/Button.vue'
 import StudentImages from './components/StudentImages.vue'
 import OtherTitles from './components/OtherTitles.vue'
+import City from './components/City.vue'
 </script>
 <script lang="ts">
 export default {
@@ -25,6 +26,7 @@ export default {
   </div>
   <StudentImages class="mx-auto my-36" />
   <OtherTitles type="h3" msg="Des campus partout en France" />
+  <City numberOfStudents="2000" imageFile="ville1.png" />
 </template>
 
 <style scoped>

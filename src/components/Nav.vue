@@ -1,12 +1,16 @@
-<script setup lang="ts">
-import Button from './Button.vue'
-</script>
 <script lang="ts">
-export default {
-    setup() {
+import { defineComponent } from 'vue'
+import Button from './Button.vue'
 
-    }
-}
+export default defineComponent({
+  components: { Button },
+    props: {
+        
+    },
+    setup(props) {
+        
+    },
+})
 </script>
 
 <template>

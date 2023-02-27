@@ -1,15 +1,17 @@
-<script setup lang="ts">
-defineProps<{
-  type?: string,
-  msg?: string
-}>()
-</script>
 <script lang="ts">
-export default {
-    setup() {
+import { defineComponent } from 'vue'
+import Point from './Point.vue'
 
-    }
-}
+export default defineComponent({
+  components: { Point },
+    props: {
+        type: String,
+        msg: String
+    },
+    setup(props) {
+        
+    },
+})
 </script>
 
 <template>

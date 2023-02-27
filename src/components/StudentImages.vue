@@ -1,13 +1,16 @@
-<script setup lang="ts">
-import Point from './Point.vue'
-</script>
-
 <script lang="ts">
-export default {
-    setup() {
+import { defineComponent } from 'vue'
+import Point from './Point.vue'
 
-    }
-}
+export default defineComponent({
+  components: { Point },
+    props: {
+        message: String
+    },
+    setup(props) {
+        
+    },
+})
 </script>
 
 <template>
