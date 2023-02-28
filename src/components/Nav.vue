@@ -3,13 +3,7 @@ import { defineComponent } from 'vue'
 import Button from './Button.vue'
 
 export default defineComponent({
-  components: { Button },
-    props: {
-        
-    },
-    setup(props) {
-        
-    },
+  components: { Button }
 })
 </script>
 

@@ -24,14 +24,14 @@ export default defineComponent({
 
 
 <template>
-  <Nav class="my-14" />
-  <MainTitle class="w-[600px] mx-auto mt-30" :msg="'La meilleure école des métiers du digital'" />
-  <div class="flex justify-center">
-    <Button class="mx-auto mt-8" :text="'Appelez-nous'" />
+  <Nav />
+  <MainTitle :msg="'La meilleure école des métiers du digital'" />
+  <div>
+    <Button :text="'Appelez-nous'" />
   </div>
-  <StudentImages class="mx-auto my-36" />
+  <StudentImages />
   <OtherTitles type="h3" :msg="'Des campus partout en France'" />
-  <City class="mt-8 mb-60" />
+  <City />
   <OtherTitles :type="'h3'" :msg="'Plusieurs spécialités'" />
   <OtherTitles :type="'h2'" :msg="'Les domaines les plus demandés dans le digital'" />
 </template>
