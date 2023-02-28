@@ -13,7 +13,7 @@ export default defineComponent({
     methods: {
         getImageUrl() {
             // This path must be correct for your file
-            return new URL(`../assets/${this.img}`, import.meta.url)
+            return new URL(`../assets/${this.img}`, import.meta.url).href
         }
     },
     mounted() {
