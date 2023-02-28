@@ -31,7 +31,7 @@ export default defineComponent({
   </div>
   <StudentImages class="mx-auto my-36" />
   <OtherTitles type="h3" msg="Des campus partout en France" />
-  <City numberOfStudents="2000" imageFile="ville1.png" />
+  <City class="mt-8" numberOfStudents="2000" imageFile="ville1.png" />
 </template>
 
 <style scoped>
