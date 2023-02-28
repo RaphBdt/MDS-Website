@@ -11,9 +11,11 @@ import City from './components/City.vue'
 import Category from './components/Category.vue'
 import Point from './components/Point.vue'
 import ArticleCard from './components/ArticleCard.vue'
+import Arrow from './components/Arrow.vue'
+import Alumni from './components/Alumni.vue'
 
 export default defineComponent({
-  components: { Nav, MainTitle, Button, StudentImages, OtherTitles, City, Category, Point, ArticleCard, Container },
+  components: { Nav, MainTitle, Button, StudentImages, OtherTitles, City, Category, Point, ArticleCard, Container, Arrow, Alumni },
     props: {
         message: String
     },
@@ -34,10 +36,10 @@ export default defineComponent({
     <Button class="mx-auto mt-8" text="Appelez-nous" />
   </div>
   <StudentImages class="mx-auto my-36" />
-  <OtherTitles type="h3" msg="Des campus partout en France" />
+  <OtherTitles class="text-center" type="h3" msg="Des campus partout en France" />
   <City class="mt-8 mb-[170px]" numberOfStudents="2000" imageFile="ville1.png" />
-  <OtherTitles type="h3" msg="Plusieurs spécialités" />
-  <OtherTitles class="w-[600px] mx-auto mt-4" type="h2" msg="Les domaines les plus demandés dans le digital" />
+  <OtherTitles class="text-center" type="h3" msg="Plusieurs spécialités" />
+  <OtherTitles class="w-[600px] mx-auto mt-4 text-center" type="h2" msg="Les domaines les plus demandés dans le digital" />
   <div class="relative">
     <Container>
       <div class="flex justify-around align-center mt-24">
@@ -54,7 +56,7 @@ export default defineComponent({
     <Button class="mx-auto mt-8" text="Télécharger le programme" />
   </div>
   <div class="bg-[#181B3F] w-full my-32 pt-10 pb-32">
-    <OtherTitles class="w-[600px] mx-auto text-white my-20" type="h2" msg="MyDigitalSchool, c'est aussi un blog avec des conseils" />
+    <OtherTitles class="w-[600px] mx-auto text-white my-20 text-center" type="h2" msg="MyDigitalSchool, c'est aussi un blog avec des conseils" />
     <Container>
       <div class="flex justify-around align-center">
         <ArticleCard img="blog1.jpg" date="4 mars" title="Comment devenir développeur web ?" />
@@ -64,6 +66,21 @@ export default defineComponent({
       </div>
     </Container>
   </div>
+  <Container>
+    <div class="flex justify-between items-center">
+      <OtherTitles class="w-[400px] mt-4" type="h2" msg="Qu'est-ce que nos alumnis en pensent ?" />
+      <div class="flex">
+        <Arrow class="mr-5" direction="left" />
+        <Arrow direction="right" />
+      </div>
+    </div>
+  </Container>
+  <Container>
+    <div class="flex justify-between mt-20">
+      <Alumni class="w-[47%] rounded-xl" img="alumni1.jpg" firstname="Mélanie" promotion="Étudiante en 2015" description="J’ai passé clairement mes 2 meilleurs années scolaires à MyDigitalSchool. L’ambiance, les intervenants et les locaux m’ont permis de m’épanouir, gros big up pour la connexion internet ! ❤️" date="Mars 2022" />
+      <Alumni class="w-[47%] rounded-xl" img="alumni2.jpg" firstname="Léo" promotion="Étudiant en 2015" description="J’ai passé clairement mes 2 meilleurs années scolaires à MyDigitalSchool. L’ambiance, les intervenants et les locaux m’ont permis de m’épanouir, gros big up pour la connexion internet ! ❤️" date="Juin 2017" />
+    </div>
+  </Container>
 </template>
 
 <style scoped>

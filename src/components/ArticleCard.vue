@@ -15,9 +15,6 @@ export default defineComponent({
             // This path must be correct for your file
             return new URL(`../assets/${this.img}`, import.meta.url).href
         }
-    },
-    mounted() {
-        console.log(this.getImageUrl);
     }
 })
 </script>
