@@ -13,9 +13,10 @@ import Point from './components/Point.vue'
 import ArticleCard from './components/ArticleCard.vue'
 import Arrow from './components/Arrow.vue'
 import Alumni from './components/Alumni.vue'
+import Newsletter from './components/Newsletter.vue'
 
 export default defineComponent({
-  components: { Nav, MainTitle, Button, StudentImages, OtherTitles, City, Category, Point, ArticleCard, Container, Arrow, Alumni },
+  components: { Nav, MainTitle, Button, StudentImages, OtherTitles, City, Category, Point, ArticleCard, Container, Arrow, Alumni, Newsletter },
     props: {
         message: String
     },
@@ -77,9 +78,12 @@ export default defineComponent({
   </Container>
   <Container>
     <div class="flex justify-between mt-20">
-      <Alumni class="w-[47%] rounded-xl" img="alumni1.jpg" firstname="Mélanie" promotion="Étudiante en 2015" description="J’ai passé clairement mes 2 meilleurs années scolaires à MyDigitalSchool. L’ambiance, les intervenants et les locaux m’ont permis de m’épanouir, gros big up pour la connexion internet ! ❤️" date="Mars 2022" />
-      <Alumni class="w-[47%] rounded-xl" img="alumni2.jpg" firstname="Léo" promotion="Étudiant en 2015" description="J’ai passé clairement mes 2 meilleurs années scolaires à MyDigitalSchool. L’ambiance, les intervenants et les locaux m’ont permis de m’épanouir, gros big up pour la connexion internet ! ❤️" date="Juin 2017" />
+      <Alumni class="w-[47%]" img="alumni1.jpg" firstname="Mélanie" promotion="Étudiante en 2015" description="J’ai passé clairement mes 2 meilleurs années scolaires à MyDigitalSchool. L’ambiance, les intervenants et les locaux m’ont permis de m’épanouir, gros big up pour la connexion internet ! ❤️" date="Mars 2022" />
+      <Alumni class="w-[47%]" img="alumni2.jpg" firstname="Léo" promotion="Étudiant en 2015" description="J’ai passé clairement mes 2 meilleurs années scolaires à MyDigitalSchool. L’ambiance, les intervenants et les locaux m’ont permis de m’épanouir, gros big up pour la connexion internet ! ❤️" date="Juin 2017" />
     </div>
+  </Container>
+  <Container>
+    <Newsletter class="mt-40" />
   </Container>
 </template>
 
