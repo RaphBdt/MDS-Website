@@ -1,13 +1,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Container from './Container.vue'
 
 export default defineComponent({
-
+    components: { Container }
 })
 </script>
 
 <template>
-    <div class="container mx-auto">
+    <Container>
         <div class="flex items-end justify-center">
             <div class="mx-8 flex flex-col items-center">
                 <img class="w-[110px] h-auto" src="../assets/ville1.png" alt="">
@@ -26,7 +27,7 @@ export default defineComponent({
                 <p class="mt-5 uppercase font-bold text-[#686868]">2000 étudiants</p>
             </div>
         </div>
-    </div>
+    </Container>
 </template>
 
 <style scoped>

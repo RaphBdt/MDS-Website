@@ -1,15 +1,16 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Button from './Button.vue'
+import Container from './Container.vue'
 
 export default defineComponent({
-  components: { Button }
+  components: { Button, Container }
 })
 </script>
 
 <template>
     <nav>
-        <div class="container mx-auto">
+        <Container>
             <div class="flex justify-between items-center">
                 <a href="https://vuejs.org/" target="_blank">
                     <img src="../assets/logo-mds.png" class="logo vue w-[131px]" alt="Logo MDS" />
@@ -21,7 +22,7 @@ export default defineComponent({
                 </div>
                 <Button text="M'inscrire" />
             </div>
-        </div>
+        </Container>
     </nav>
 </template>
 
